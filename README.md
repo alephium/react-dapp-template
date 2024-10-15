@@ -1,34 +1,11 @@
-# My dApp
+# My React dApp
 
-## Install
+## Start a local devnet for testing and development
 
-```
-npm install
-```
+Please refer to the documentation here: https://wiki.alephium.org/full-node/devnet
 
-## Start the app
-
-Compile the TypeScript files into JavaScript:
+## Run the app
 
 ```
 npm run start
-```
-
-## Start a devnet
-
-```
-npm run start-devnet // this will start a devnet for smart contract tests
-```
-
-## Stop/restart devnet
-
-```
-npm run stop-devnet
-npm run restart-devnet
-```
-
-## Testing
-
-```
-npm test
 ```
