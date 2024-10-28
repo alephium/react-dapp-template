@@ -1,13 +1,11 @@
-'use client'
-
 import React, { useCallback } from 'react'
 import { FC, useState } from 'react'
-import styles from './styles/Home.module.css'
-import { withdrawToken } from './services/token.service'
+import styles from '../styles/Home.module.css'
+import { withdrawToken } from '../services/token.service'
 import { TxStatus } from './TxStatus'
 import { useWallet } from '@alephium/web3-react'
 import { node } from '@alephium/web3'
-import { TokenFaucetConfig } from './services/utils'
+import { TokenFaucetConfig } from '../services/utils'
 
 export const TokenDapp: FC<{
   config: TokenFaucetConfig
@@ -25,23 +23,23 @@ export const TokenDapp: FC<{
     }
   }
 
-  const txStatusCallback = useCallback(async (status: node.TxStatus, numberOfChecks: number): Promise<any> => {
-    if (
-      (status.type === 'Confirmed' && numberOfChecks > 2) ||
-      (status.type === 'TxNotFound' && numberOfChecks > 3)
-    ) {
-      setOngoingTxId(undefined)
-    }
+  const txStatusCallback = useCallback(
+    async (status: node.TxStatus, numberOfChecks: number): Promise<any> => {
+      if ((status.type === 'Confirmed' && numberOfChecks > 2) || (status.type === 'TxNotFound' && numberOfChecks > 3)) {
+        setOngoingTxId(undefined)
+      }
 
-    return Promise.resolve()
-  }, [setOngoingTxId])
+      return Promise.resolve()
+    },
+    [setOngoingTxId]
+  )
 
-  console.log("ongoing..", ongoingTxId)
+  console.log('ongoing..', ongoingTxId)
   return (
     <>
       {ongoingTxId && <TxStatus txId={ongoingTxId} txStatusCallback={txStatusCallback} />}
 
-      <div className="columns">
+      <div className='columns'>
         <form onSubmit={handleWithdrawSubmit}>
           <>
             <h2 className={styles.title}>Alephium Token Faucet on {config.network}</h2>
@@ -61,18 +59,18 @@ export const TokenDapp: FC<{
                 </tr>
               </tbody>
             </table>
-            <label htmlFor="withdraw-amount">Amount</label>
+            <label htmlFor='withdraw-amount'>Amount</label>
             <input
-              type="number"
-              id="transfer-amount"
-              name="amount"
-              max="2"
-              min="1"
+              type='number'
+              id='transfer-amount'
+              name='amount'
+              max='2'
+              min='1'
               value={withdrawAmount}
               onChange={(e) => setWithdrawAmount(e.target.value)}
             />
             <br />
-            <input type="submit" disabled={!!ongoingTxId} value="Send Me Token" />
+            <input type='submit' disabled={!!ongoingTxId} value='Send Me Token' />
           </>
         </form>
       </div>

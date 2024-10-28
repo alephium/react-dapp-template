@@ -1,26 +1,10 @@
 {
   "name": "my-dapp",
   "version": "0.1.0",
-  "dependencies": {
-    "@alephium/web3": "^1.8.3",
-    "@alephium/web3-react": "^1.8.3",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.115",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "compile": "cli compile",
     "deploy": "npm run devnet:deploy",
     "devnet:deploy": "cli deploy -n devnet",
@@ -30,11 +14,25 @@
     "lint": "eslint . --ext ts,tsx",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@alephium/web3": "^1.8.4",
+    "@alephium/web3-react": "^1.8.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@alephium/cli": "^1.8.4",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5"
   },
   "browserslist": {
     "production": [
@@ -48,17 +46,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@alephium/cli": "^1.8.3",
-    "buffer": "^6.0.3",
-    "crypto-browserify": "^3.12.1",
-    "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-header": "^3.1.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "process": "^0.11.10",
-    "react-app-rewired": "^2.2.1",
-    "stream-browserify": "^3.0.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "prettier": {
     "printWidth": 120,

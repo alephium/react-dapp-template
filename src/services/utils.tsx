@@ -1,5 +1,5 @@
-import { NetworkId } from "@alephium/web3";
-import { loadDeployments } from "../../artifacts/ts/deployments"
+import { NetworkId } from '@alephium/web3'
+import { loadDeployments } from '../artifacts/ts/deployments'
 
 export interface TokenFaucetConfig {
   network: NetworkId

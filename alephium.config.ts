@@ -18,17 +18,19 @@ const configuration: Configuration<Settings> = {
     },
 
     testnet: {
-      nodeUrl: process.env.NODE_URL as string ?? 'https://node.testnet.alephium.org',
+      nodeUrl: (process.env.NODE_URL as string) ?? 'https://node.testnet.alephium.org',
       privateKeys: process.env.PRIVATE_KEYS === undefined ? [] : process.env.PRIVATE_KEYS.split(','),
       settings: defaultSettings
     },
 
     mainnet: {
-      nodeUrl: process.env.NODE_URL as string ?? 'https://node.mainnet.alephium.org',
+      nodeUrl: (process.env.NODE_URL as string) ?? 'https://node.mainnet.alephium.org',
       privateKeys: process.env.PRIVATE_KEYS === undefined ? [] : process.env.PRIVATE_KEYS.split(','),
       settings: defaultSettings
     }
-  }
+  },
+  artifactDir: 'src/artifacts',
+  deploymentsDir: 'src/deployments'
 }
 
 export default configuration

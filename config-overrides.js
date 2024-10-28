@@ -6,7 +6,8 @@ module.exports = function override(config) {
     fs: false,
     crypto: require.resolve('crypto-browserify'),
     stream: require.resolve('stream-browserify'),
-    path: require.resolve('path-browserify')
+    path: require.resolve('path-browserify'),
+    'process/browser': require.resolve('process/browser')
   })
   config.resolve.fallback = fallback
   config.plugins = (config.plugins || []).concat([
@@ -15,5 +16,6 @@ module.exports = function override(config) {
       Buffer: ['buffer', 'Buffer']
     })
   ])
+  config.devtool = 'source-map'
   return config
 }
