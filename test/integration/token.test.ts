@@ -1,7 +1,7 @@
 import { web3, DUST_AMOUNT } from '@alephium/web3'
 import { testNodeWallet } from '@alephium/web3-test'
 import { deployToDevnet } from '@alephium/cli'
-import { TokenFaucet, Withdraw } from '../../artifacts/ts'
+import { TokenFaucet } from '../../src/artifacts/ts'
 
 describe('integration tests', () => {
   beforeAll(async () => {
