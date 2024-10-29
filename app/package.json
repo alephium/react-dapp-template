@@ -1,0 +1,63 @@
+{
+  "name": "my-dapp",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext ts,tsx",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "@alephium/web3": "^1.8.4",
+    "@alephium/web3-react": "^1.8.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-vitals": "^2.1.4",
+    "contracts": "0.1.0"
+  },
+  "devDependencies": {
+    "@alephium/cli": "^1.8.4",
+    "@alephium/web3-test": "^1.8.4",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "prettier": "^3.3.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "bracketSameLine": false,
+    "trailingComma": "none"
+  }
+}

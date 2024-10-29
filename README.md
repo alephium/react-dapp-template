@@ -7,5 +7,5 @@ Please refer to the documentation here: https://docs.alephium.org/full-node/gett
 ## Run the app
 
 ```
-npm run start
+yarn workspace my-dapp start
 ```

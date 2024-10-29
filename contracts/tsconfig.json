@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "outDir": "dist",
-    "jsx": "react-jsx",
     "target": "es2020",
     "allowJs": true,
     "esModuleInterop": true,
@@ -17,12 +17,5 @@
     "noImplicitOverride": true
   },
   "exclude": ["node_modules"],
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "test/**/*.ts",
-    "scripts/**/*.ts",
-    "alephium.config.ts",
-    "artifacts/**/*.ts"
-  ]
+  "include": ["./artifacts/**/*.ts"]
 }
