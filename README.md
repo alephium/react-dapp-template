@@ -1,5 +1,11 @@
 # My React dApp
 
+## Install dependencies
+
+```
+yarn install
+```
+
 ## Start a local devnet for testing and development
 
 Please refer to the documentation here: https://docs.alephium.org/full-node/getting-started#devnet
