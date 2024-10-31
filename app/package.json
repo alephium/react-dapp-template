@@ -6,9 +6,7 @@
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint . --ext ts,tsx",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@alephium/web3": "^1.8.4",
