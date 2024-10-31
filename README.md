@@ -13,23 +13,31 @@ Please refer to the documentation here: https://docs.alephium.org/full-node/gett
 ## Compile the contracts
 
 ```
-yarn workspace contracts compile
+yarn compile
 ```
 
 ## Deploy the contracts
 
 ```
-yarn workspace contracts deploy
+yarn deploy
 ```
 
 ## Build the contracts package
 
 ```
-yarn workspace contracts build
+yarn build:contracts
 ```
 
 ## Run the app
 
 ```
-yarn workspace my-dapp start
+yarn start
+```
+
+## More
+
+You could use yarn workspace to run commands in the contracts or app directory.
+
+```
+yarn <my-contracts|my-dapp> <command>
 ```

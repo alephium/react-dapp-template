@@ -1,5 +1,5 @@
 import { DUST_AMOUNT, ExecuteScriptResult, SignerProvider } from '@alephium/web3'
-import { Withdraw } from 'contracts'
+import { Withdraw } from 'my-contracts'
 
 export const withdrawToken = async (
   signerProvider: SignerProvider,
