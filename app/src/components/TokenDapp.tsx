@@ -24,7 +24,7 @@ export const TokenDapp: FC<{
   }
 
   const txStatusCallback = useCallback(
-    async (status: node.TxStatus, numberOfChecks: number): Promise<any> => {
+    async (status: node.TxStatus, numberOfChecks: number): Promise<unknown> => {
       if ((status.type === 'Confirmed' && numberOfChecks > 2) || (status.type === 'TxNotFound' && numberOfChecks > 3)) {
         setOngoingTxId(undefined)
       }
