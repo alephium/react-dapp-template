@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styles from '../styles/Home.module.css'
 import { TokenDapp } from './TokenDapp'
 import { AlephiumConnectButton, useWallet } from '@alephium/web3-react'

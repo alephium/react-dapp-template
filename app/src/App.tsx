@@ -1,5 +1,4 @@
 import { AlephiumWalletProvider } from '@alephium/web3-react'
-import './styles/globals.css'
 
 import Home from './components/Home'
 import { tokenFaucetConfig } from './services/utils'
