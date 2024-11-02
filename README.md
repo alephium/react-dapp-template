@@ -1,6 +1,6 @@
 # My React dApp
 
-This monorepo was designed to provide a developer-friendly experience to Alephium ecosystem newcomers. It is split into 2 parts:
+This template monorepo was designed to provide a developer-friendly experience to Alephium ecosystem newcomers. It is split into 2 parts:
 
 - app: contains the React frontend part of the dApp
 - contracts: contains the dApp contracts
@@ -58,3 +58,5 @@ yarn <my-contracts|my-dapp> <command>
 ```
 
 You could also get some testnet tokens from the [Faucet](https://docs.alephium.org/infrastructure/public-services/#testnet-faucet).
+
+To learn more about smart contract development on Alephium, take a look at the [documentation](https://docs.alephium.org/dapps/).
