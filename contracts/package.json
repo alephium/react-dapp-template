@@ -26,11 +26,11 @@
   },
   "dependencies": {
     "@alephium/cli": "^1.8.0",
-    "@alephium/web3": "^1.8.0",
-    "@alephium/web3-test": "^1.8.0",
-    "@alephium/web3-wallet": "^1.8.0"
+    "@alephium/web3": "^1.8.0"
   },
   "devDependencies": {
+    "@alephium/web3-test": "^1.8.0",
+    "@alephium/web3-wallet": "^1.8.0",
     "@types/jest": "^27.5.1",
     "@types/node": "^16.18.23",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
