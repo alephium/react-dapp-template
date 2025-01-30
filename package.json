@@ -11,7 +11,7 @@
     "deploy": "yarn workspace my-contracts deploy",
     "build:contracts": "yarn workspace my-contracts build",
     "dev": "yarn workspace my-dapp dev",
-    "start": "yarn workspace my-dapp start",
+    "start": "yarn workspace my-dapp dev",
     "build:app": "yarn workspace my-dapp build"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"

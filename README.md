@@ -42,7 +42,7 @@ yarn build:contracts
 ### Run the app
 
 ```
-yarn start
+yarn dev
 ```
 
 ### Install an Alephium wallet
