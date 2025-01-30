@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@alephium/web3": "^1.8.5",
-    "@alephium/web3-react": "^1.8.5",
+    "@alephium/web3": "^1.11.3",
+    "@alephium/web3-react": "^1.11.3",
     "my-contracts": "0.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
