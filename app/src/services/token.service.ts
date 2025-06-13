@@ -6,7 +6,8 @@ export const withdrawToken = async (
   amount: string,
   tokenId: string
 ): Promise<ExecuteScriptResult> => {
-  return await Withdraw.execute(signerProvider, {
+  return await Withdraw.execute({
+    signer: signerProvider,
     initialFields: {
       token: tokenId,
       amount: BigInt(amount)
